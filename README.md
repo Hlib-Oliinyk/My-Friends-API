@@ -1,8 +1,7 @@
-# My Friends API 🐱‍👤
+# My Friends API
 
 **FastAPI backend for managing friends, friend groups, and user relationships. Features async SQLAlchemy + PostgreSQL, JWT authentication with cookies, full CRUD operations, and Docker deployment.**
 
-[![FastAPI](https://img.shields.io/badge/FastAPI-Modern_Fast-High_Performance-blue)](https://fastapi.tiangolo.com)
 [![SQLAlchemy Async](https://img.shields.io/badge/SQLAlchemy-Async-0074D9)](https://docs.sqlalchemy.org/en/20/orm/extensions/asyncio.html)
 [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-AsyncPG-336791)](https://www.asyncpg.org)
 [![Docker](https://img.shields.io/badge/Docker-Compose-2496ED)](https://docs.docker.com/compose/)
