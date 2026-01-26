@@ -5,16 +5,14 @@ from app.db.models import *
 from app.api.v1 import *
 
 
-app = FastAPI(
-    docs_url='/api/docs'
-)
-
-
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     async with engine.begin() as conn:
         await conn.run_sync(Base.metadata.create_all)
     yield
+
+
+app = FastAPI(lifespan=lifespan, docs_url='/api/docs')
 
 
 app.include_router(users_router)
