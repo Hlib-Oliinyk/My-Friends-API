@@ -44,7 +44,7 @@ cd project
 docker-compose up -d
 ```
 
-**API ready at:** `http://localhost:9000/api/docs`
+**API ready at:** `http://localhost:8000/api/docs`
 
 ### 2. Local Development
 ```bash
@@ -114,7 +114,7 @@ services:
   app:
     build: .
     ports:
-      - "9000:9000"
+      - "8000:8000"
     environment:
       - DATABASE_URL=postgresql+asyncpg://postgres:password@db:5432/friends_db
     depends_on:
@@ -163,9 +163,9 @@ Deploy: Render (Web Service + PostgreSQL)
 
 ## 📚 Interactive Documentation
 
-- **Swagger UI:** `http://localhost:9000/api/docs`
+- **Swagger UI:** `http://localhost:8000/api/docs`
 - **ReDoc:** `https://my-friends-api.onrender.com/api/docs`
-- **Root:** `http://localhost:9000/` → API info
+- **Root:** `http://localhost:8000/` → API info
 
 **All endpoints fully documented with request/response models!**
 
@@ -176,10 +176,10 @@ Deploy: Render (Web Service + PostgreSQL)
 pip install -r requirements.txt
 
 # Run with reload
-uvicorn main:app --reload --port 9000
+uvicorn main:app --reload --port 8000
 
 # Test endpoints
-curl -X POST "http://localhost:9000/api/auth/register" \
+curl -X POST "http://localhost:8000/api/auth/register" \
   -H "Content-Type: application/json" \
   -d '{"email":"test@test.com","username":"test","password":"123"}'
 ```
