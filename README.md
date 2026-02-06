@@ -164,7 +164,7 @@ Deploy: Render (Web Service + PostgreSQL)
 ## 📚 Interactive Documentation
 
 - **Swagger UI:** `http://localhost:8000/api/docs`
-- **ReDoc:** `https://my-friends-api.onrender.com/api/docs`
+- **OnRender:** `https://my-friends-api.onrender.com/api/docs`
 - **Root:** `http://localhost:8000/` → API info
 
 **All endpoints fully documented with request/response models!**
